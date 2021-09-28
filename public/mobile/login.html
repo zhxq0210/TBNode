@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+               initial-scale=1.0,
+               minimum-scale=1.0,
+               maximum-scale=1.0,
+               user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+
+<div>
+
+    <!--公用头部-->
+    <div class="header">
+        <ul>
+            <li class="header-btn">
+                <a style="" class="go-back iconfont" href="javascript:window.history.go(-1);"><</a>
+            </li>
+
+            <li class="header-tit">
+                <p>登录</p>
+            </li>
+
+            <li class="header-btn">
+                <a>消息</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!--内容区域-->
+    <div class="content">
+        <ul class="login-list">
+
+            <li class="login-item">
+                <input type="text" class="text username" placeholder="请输入用户名">
+            </li>
+            <li class="login-item">
+                <input type="password" class=" password text" placeholder="请输入密码">
+            </li>
+
+            <li class="login-item checkbox-item">
+                <label >
+                    <input class="show-password" type="checkbox" >
+                    显示密码
+                </label>
+                <a href="forget.html" class="forget">忘记密码?</a>
+            </li>
+            <li class="login-item  checkbox-item">
+                <label >
+                    <input type="checkbox" class="auto-login" >
+                    自动登录
+                </label>
+            </li>
+            <li class="login-item">
+                <input type="button" class="login-btn" value="登录" >
+            </li>
+
+            <li class="login-item">
+                <a  class="reg-btn" href="reg.html"  >注册</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<script src="js/libs/require.js" data-main="js/login.js"></script>
+
+</body>
+</html>

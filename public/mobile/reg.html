@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+               initial-scale=1.0,
+               minimum-scale=1.0,
+               maximum-scale=1.0,
+               user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div>
+    <!--公用头部-->
+    <div class="header">
+        <ul>
+            <li class="header-btn">
+                 <a style="" class="go-back iconfont" href="javascript:window.history.go(-1);"><</a>
+            </li>
+
+            <li class="header-tit">
+                <p>注册</p>
+            </li>
+
+            <li class="header-btn">
+                <a>消息</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!--内容区域-->
+    <div class="content">
+        <ul class="login-list">
+
+            <li class="login-item">
+                <input type="text" class="text username" placeholder="请输入手机号">
+            </li>
+            <li class="login-item code-item">
+                <input type="text" class="text mobile-code" placeholder="手机验证码">
+                <button class="get-code">获取验证码</button>
+            </li>
+            <li class="login-item">
+                <input type="password" class="password text" placeholder="请输入密码">
+            </li>
+            <li class="login-item">
+                <input type="password" class="r-password text" placeholder="请再次输入密码">
+            </li>
+
+           
+            <li class="login-item">
+                <input type="button" class="reg-btn red-btn" value="注册" >
+            </li>
+
+            <li class="login-item">
+                <a  class="reg-btn" href="login.html"  >登录</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="js/libs/require.js" data-main="js/reg.js"></script>
+
+</body>
+</html>

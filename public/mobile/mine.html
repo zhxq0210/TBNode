@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Title</title>
+
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/mine.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+
+    <script data-main="js/mine"  src="js/libs/require.js"></script>
+
+</head>
+<body>
+<div class="page" id="mine-page">
+   <div class="header">
+        <ul>
+            <li class="header-btn">
+                <a><</a>
+            </li>
+
+            <li class="header-tit">
+                <p>登录</p>
+            </li>
+
+            <li class="header-btn">
+                <a>消息</a>
+            </li>
+        </ul>
+    </div>
+
+
+     <div class="footer">
+
+        <ul>
+            <li>
+                <a href="">
+                    <div><span class="icon-font icon-all all"></span></div>
+                    <div>首页</div>
+                </a>
+            </li>
+            <li>
+                <a href="list.html">
+                    <div><span class="icon-font icon-all all"></span></div>
+                    <div>列表</div>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <div><span class="icon-font icon-all all"></span></div>
+                    <div>购物车</div>
+                </a>
+            </li>
+            <li>
+                <a href="mine.html">
+                    <div><span class="icon-font icon-all all"></span></div>
+                    <div>我的</div>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <div><span class="icon-font icon-all all"></span></div>
+                    <div>登录</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        
+        <ul class="mine-list">
+            <li>
+                <a href="order.html">我的订单</a>
+            </li>
+            <li>
+                <a href="order.html">足迹</a>
+            </li>
+            <li>
+                <a href="order.html">收藏</a>
+            </li>
+            <li>
+                <a href="order.html">信息管理</a>
+            </li>
+            <li>
+                <a href="order.html">积分商城</a>
+            </li>
+        </ul>
+        <div class="btn-wrap" style="padding: 50px;">
+            <button id="login-out" class="red-btn" >退出登录</button>
+        </div>
+
+        <script>
+            document.getElementById("login-out").onclick=function(){
+                window.localStorage.clear();
+                window.sessionStorage.clear();
+                window.location.href="login.html"
+            }
+        </script>
+    </div>
+
+</div>
+
+
+</body>
+</html>
